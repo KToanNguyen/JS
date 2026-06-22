@@ -16,11 +16,11 @@
             <table border="1" cellpadding="10" cellspacing="0" style="width: 95%; margin: 20px auto; font-family: sans-serif; text-align: center;">
                 <thead>
                     <tr>
-                        <th><button type="button">1</button></th>
-                        <th><button type="button">2</button></th>
-                        <th><button type="button">3</button></th>
-                        <th><button type="button">4</button></th>
-                        <th><button type="button">5</button></th>
+                        <th><button type="button" class="head-btn">1</button></th>
+                        <th><button type="button" class="head-btn">2</button></th>
+                        <th><button type="button" class="head-btn">3</button></th>
+                        <th><button type="button" class="head-btn">4</button></th>
+                        <th><button type="button" class="head-btn">5</button></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -81,9 +81,15 @@
                     </tr>
                 </tbody>
             </table>
-            <div class="controls-container" style="text-align: center; margin: 20px auto; width: 95%;">
-                <button type="button" class="surprise">Surprise</button>
-                <button type="button" class="playback">Playback</button>
+            
+            <div class="controls-container">
+                <button type="button" id="surprise">Surprise</button>
+                <button type="button" id="reset">Reset</button>
+            </div>
+
+            <div class="story-container">
+                <h2>Your Story Blueprint:</h2>
+                <p id="story-display">Click column numbers or press Surprise to begin!</p>
             </div>
        </main>
     </body>
