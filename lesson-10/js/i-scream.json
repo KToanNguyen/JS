@@ -21,5 +21,17 @@
         "type": "milkshake-type ice-cream",
         "ingredients":["Rainbow Sprinkle", "Strawberry Syrup", "Strawberry Smoothie Base"],
         "image": "https://ktoannguyen.github.io/JS/lesson-10/images/strawberry-sprinkle.svg"
+    }, {
+        "name": "Rainbow Avocado",
+        "calories": 210,
+        "type": "ice-cream",
+        "ingredients":["Rainbow Sprinkle", "Avocado Smoothie Base"],
+        "image": "https://ktoannguyen.github.io/JS/lesson-10/images/avocado-sprinkle.svg"
+    }, {
+        "name": "Cookie Doughie",
+        "calories": 270,
+        "type": "ice-cream",
+        "ingredients":["Chocolate Chips", "Caramel Syrup", "Cookie-Flavour Base"],
+        "image": "https://ktoannguyen.github.io/JS/lesson-10/images/cookie-dough.svg"
     }]
 }
