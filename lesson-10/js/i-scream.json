@@ -15,5 +15,11 @@
         "type": "milkshake-type ice-cream",
         "ingredients":["Peach Chunks", "Peach Syrup", "Mango Smoothie Base"],
         "image": "https://ktoannguyen.github.io/JS/lesson-10/images/peach-mango.svg"
+    }, {
+        "name": "Crunchy Strawberry",
+        "calories": 230,
+        "type": "milkshake-type ice-cream",
+        "ingredients":["Rainbow Sprinkle", "Strawberry Syrup", "Strawberry Smoothie Base"],
+        "image": "https://ktoannguyen.github.io/JS/lesson-10/images/strawberry-sprinkle.svg"
     }]
 }
