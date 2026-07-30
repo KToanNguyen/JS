@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>La Pizzarera - Customize Your Pizza</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	    <link href="css/normalize.css" rel="stylesheet" />
+        <link href="css/pizza.css" rel="stylesheet" />
+        <script src="js/pizza.json" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="company">La Pizzarera!</h1>
+        </header>
+        <fieldset>
+        <legend id="custom">Customize your pizza:</legend>
+        <form action="confirm.html" method="GET">
+                <legend>Size</legend>
+                <select id="size" name="size"></select>
+
+                <legend>Crust</legend>
+                <select id="crust" name="crust"></select>
+
+                <legend>Cheese</legend>
+                <select id="cheese" name="cheese"></select>
+
+                <legend>Meat</legend>
+                <select id="meat" name="meat"></select>
+
+                <legend>Vegan</legend>
+                <select id="vegan" name="vegan"></select>
+
+                <legend>Number of Pizzas</legend>
+                <input type="number" id="number" name="quantity" value="1" min="1" required />
+
+            <button type="submit">Finish!</button>
+        </fieldset>
+        </form>
+    </body>
+</html>
