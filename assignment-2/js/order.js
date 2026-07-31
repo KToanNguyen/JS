@@ -44,7 +44,7 @@ function optionsAdder(pizzaData) {
             option.forEach((item) => {
                 // Create <option> element
                 let optionElement = document.createElement("option");
-                optionElement.value = item.id || item.name;
+                optionElement.value = item.name;
                 optionElement.textContent = item.name || item.type;
                 select.appendChild(optionElement);
             });

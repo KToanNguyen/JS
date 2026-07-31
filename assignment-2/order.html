@@ -4,9 +4,12 @@
         <meta charset="UTF-8" />
         <title>La Pizzarera - Customize Your Pizza</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=Lobster&display=swap" rel="stylesheet">
 	    <link href="css/normalize.css" rel="stylesheet" />
         <link href="css/pizza.css" rel="stylesheet" />
-        <script src="js/myscript.js" defer></script>
+        <script src="js/order.js" defer></script>
     </head>
     <body>
         <header>
@@ -14,11 +17,11 @@
         </header>
         <fieldset>
         <legend id="custom">Customize your pizza:</legend>
-        <form action="end.html" method="GET">
+        <form action="confirm.html" method="GET">
                 <legend>Size</legend>
                 <select id="size" name="size"></select>
 
-                <legend placeholder="None">Crust</legend>
+                <legend>Crust</legend>
                 <select id="crust" name="crust"></select>
 
                 <legend>Cheese</legend>
