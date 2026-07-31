@@ -1,0 +1,88 @@
+{
+    "crust": [
+        {
+            "id": "thin",
+            "name": "Thin Crust"
+        },
+        {
+            "id": "thick",
+            "name": "Thick Crust"
+        }
+    ],
+    "size": [
+        {
+            "id": "small",
+            "name": "Small (8\")"
+        },
+        {
+            "id": "medium",
+            "name": "Medium (12\")"
+        },
+        {
+            "id": "large",
+            "name": "Large (16\")"
+        }
+    ],
+    "cheese": [
+        {
+            "id": "moz",
+            "name": "Mozzarella"
+        },
+        {
+            "id": "pro",
+            "name": "Provolone"
+        },
+        {
+            "id": "che",
+            "name": "Cheddar"
+        },
+        {
+            "id": "mon",
+            "name": "Monterey Jack"
+        }
+    ],
+    "meat": [
+        {
+            "id": "ita",
+            "name": "Italian Sausage"
+        },
+        {
+            "id": "pep",
+            "name": "Pepperoni"
+        },
+        {
+            "id": "pan",
+            "name": "Pancetta"
+        },
+        {
+            "id": "bac",
+            "name": "Bacon"
+        },
+        {
+            "id": "cow",
+            "name": "Beef"
+        }
+    ],
+    "vegan": [
+        {
+            "id": "bel",
+            "name": "Bell Pepper"
+        },
+        {
+            "id": "oli",
+            "name": "Olive"
+        },
+        {
+            "id": "mus",
+            "name": "Mushroom"
+        },
+        {
+            "id": "con",
+            "name": "Caramelized Onion"
+        },
+        {
+            "id": "tom",
+            "name": "Tomato"
+        }
+    ]
+}
