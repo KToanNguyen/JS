@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+/* ==========================================================================
+   Typography Classes (Google Fonts)
+   ========================================================================== */
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cause {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* ==========================================================================
+   Theme Variables & Reset
+   ========================================================================== */
+:root {
+    /* Color Palette */
+    --primary-red: #d32f2f;
+    --primary-red-hover: #b71c1c;
+    --basil-green: #2e7d32;
+    --crust-gold: #f57c00;
+    --warm-bg: #fffbf5;
+    --card-bg: #ffffff;
+    --text-dark: #2c3e50;
+    --border-color: #ebdccb;
+
+    /* Font Stacks */
+    --font-heading: "Lobster", sans-serif;
+    --font-handwriting: "Caveat", cursive;
+    --font-body: "Poppins", 'Segoe UI', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--warm-bg);
+    color: var(--text-dark);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2.5rem 1rem;
+}
+
+/* ==========================================================================
+   Header & Typography
+   ========================================================================== */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1.company, h1 {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    color: var(--primary-red);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   Form & Card Container
+   ========================================================================== */
+form, #receiptCard {
+    background: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(183, 28, 28, 0.08);
+    width: 100%;
+    max-width: 480px;
+    padding: 2.5rem;
+    border: 2px solid var(--border-color);
+    border-top: 8px solid var(--primary-red);
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+/* Sub-header using the Handwriting font */
+legend#custom {
+    font-family: var(--font-handwriting);
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--basil-green);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+/* Field Group Labels */
+legend:not(#custom) {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #5d4037;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+/* ==========================================================================
+   Form Controls (<select> & <input>)
+   ========================================================================== */
+select, 
+input[type="number"] {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    background-color: #fdfaf6;
+    color: var(--text-dark);
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+select:focus, 
+input[type="number"]:focus {
+    border-color: var(--primary-red);
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(211, 47, 47, 0.12);
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+button[type="submit"], 
+.btn-primary {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: var(--primary-red);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 4px 12px rgba(211, 47, 47, 0.25);
+}
+
+button[type="submit"]:hover,
+.btn-primary:hover {
+    background-color: var(--primary-red-hover);
+}
+
+button[type="submit"]:active,
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+/* ==========================================================================
+   Receipt Card (end.html)
+   ========================================================================== */
+#receiptCard h2 {
+    font-family: var(--font-handwriting);
+    font-size: 2.6rem;
+    color: var(--basil-green);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px dashed var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.receipt-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f5ebe0;
+    font-size: 1.05rem;
+}
+
+.receipt-item strong {
+    color: #795548;
+}
+
+.receipt-item span {
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+/* THIS CSS IS GENERATED BY GEMINI */
